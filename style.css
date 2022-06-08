@@ -686,29 +686,78 @@ footer span {
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   font-family: Ubuntu, sans-serif;
   font-size: 14px;
   font-weight: normal;
-  height: 358px;
   line-height: 16.100000381469727px;
   outline-color: rgb(0, 0, 0);
   outline-style: none;
   outline-width: 0px;
 }
 
+#footer_lower {
+  margin-top: -90px;
+}
+
 #footer_first_div {
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
   max-width: 1810px;
   height: 564px;
   background-color: #f0f3f2;
-  padding: 50px 0 50px;
   display: flex;
   padding: 50px 100px;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1110px) {
+  .footer_section {
+    flex-wrap: wrap;
+  }
+
+  #footer_lower {
+    padding-top: 290px;
+    background-color: #f0f3f2;
+    padding-bottom: 50px;
+  }
+
+  .socials {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .footer_section {
+    display: none;
+  }
+
+  .socials {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
+
+  #footer_lower {
+    padding-top: 0px;
+    margin-top: -30px;
+    margin-bottom: -200px;
+  }
+
+  #footer_first_div {
+    padding: 0px 0px;
+    height: 300px;
+  }
+
+  .socials span:first-child {
+    display: none;
+  }
 }
 
 .footer_icon {
@@ -739,6 +788,15 @@ footer span:hover {
 
 #menu_icon {
   display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  #menu_icon {
+    display: inline;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -792,10 +850,10 @@ footer span:hover {
 
 @media screen and (max-width: 810px) {
   .hidden {
-   display: none;
+    display: none;
   }
 
-  #looks_div div img{
+  #looks_div div img {
     margin-left: 20px;
     max-width: 500px;
     width: 100%;
@@ -804,13 +862,13 @@ footer span:hover {
   }
 
   .button2 {
- height: 30px;
- margin-left: 80px;
- margin-top:5px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 5px;
     width: 180px;
   }
 
   #banners .button1 {
- visibility: hidden;
-     }
+    visibility: hidden;
+  }
 }
