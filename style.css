@@ -182,7 +182,6 @@ header > div {
   flex-direction: row;
   justify-content: space-between;
   max-width: 2410px;
-
   width: 100%;
   background-color: black;
   margin-right: auto;
@@ -203,7 +202,6 @@ header > div {
   font-size: 12px;
   letter-spacing: 1.2px;
   padding-top: 20px !important;
-
   text-transform: uppercase;
 }
 
@@ -871,4 +869,58 @@ footer span:hover {
   #banners .button1 {
     visibility: hidden;
   }
+}
+
+#mob_menu {
+  position: absolute;
+  height: 900px;
+  width: 45vw;
+  background-color: black;
+  z-index: 1;
+  border-top: 1px solid rgb(65, 65, 65);
+  top: 100;
+  padding: 20px 20px;
+  cursor: pointer;
+  font-family: Ubuntu, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal; display: none;
+}
+
+#menu_1st_div {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#menu_2nd_div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+#menu_2nd_div span {
+  margin-bottom: 30px;
+}
+
+#menu_3rd_div {
+  display: flex;
+  flex-direction: column;
+  color: rgb(109, 109, 109);
+  margin-top: 30px;
+}
+
+#menu_3rd_div span {
+  margin-bottom: 30px;
+}
+
+#socials_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 20px;
 }
