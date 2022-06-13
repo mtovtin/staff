@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <div id="helpers">
+
+        <img width="50px" src="./images/blackcircle.svg">
+        <img id="r" width="30px" src="./images/r.png">
+        <img id="k" width="60px" height='60px' src="./images/k.png">
+    </div>
     <header>
         <div>
             <div class="header_content" style="display: inline-block;">
@@ -47,7 +53,8 @@
                         <span id="logo">
                             <img src="./images/logo.jpg" alt="logo" width="110px">
                         </span>
-                        <span id="menu_icon">
+                        <span onclick=" var x = document.getElementById('mob_menu'); x.style.display = 'none'"
+                            id="menu_icon">
                             <img src="./images/menu.jpg" alt="logo" width="25px">
                         </span>
 
@@ -194,7 +201,51 @@
                 <img class='footer_icon' src="./images/icon4_b.png">
                 <img class='footer_icon' src="./images/icon5_b.png">
             </span>
-            <div style="margin-top: 30px; margin-left: 20px;"><img width="300px" height="50px" src="./images/app_b.png" alt=""></div>
+            <div style="margin-top: 30px; margin-left: 20px;"><img width="300px" height="50px" src="./images/app_b.png"
+                    alt=""></div>
+        </div>
+    </section>
+    <section>
+        <div id="stories">
+
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+            
+            <div>
+                <div> <img src="./images/stories.png" width="60px" alt=""> </div>
+                <div class="stories_text">SALE</div>
+            </div>
+        </div>
+
         </div>
     </section>
     <section>
@@ -240,6 +291,7 @@
         <span class='subtitle'>
             ПІДБІРКА ОБРАЗІВ
         </span>
+
         <div id="looks_div">
             <div style="margin-right: 20px; overflow: hidden;">
                 <img src="./images/look1.jpeg" alt="tshirts">
@@ -249,7 +301,7 @@
                 <img src="./images/look2.jpeg" alt="shorts">
                 <button class="button2">подивитися образ</button>
             </div>
-            <div class="hidden" style="overflow: hidden;">
+            <div id="hiddenlook3" class="hidden" style="overflow: hidden;">
                 <img src="./images/look3.jpeg" alt="shorts">
                 <button class="button2">подивитися образ</button>
             </div>
